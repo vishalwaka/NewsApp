@@ -1,0 +1,79 @@
+PODS:
+  - Alamofire (4.8.1)
+  - Kingfisher (4.10.1)
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Moya/RxSwift (12.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Result (4.1.0)
+  - Reusable (4.0.5):
+    - Reusable/Storyboard (= 4.0.5)
+    - Reusable/View (= 4.0.5)
+  - Reusable/Storyboard (4.0.5)
+  - Reusable/View (4.0.5)
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxKingfisher (0.3.1):
+    - Kingfisher (~> 4)
+    - RxCocoa (~> 4.3)
+    - RxSwift (~> 4.3)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - RxSwiftExt (3.4.0):
+    - RxSwiftExt/Core (= 3.4.0)
+    - RxSwiftExt/RxCocoa (= 3.4.0)
+  - RxSwiftExt/Core (3.4.0):
+    - RxSwift (~> 4.0)
+  - RxSwiftExt/RxCocoa (3.4.0):
+    - RxCocoa (~> 4.0)
+    - RxSwiftExt/Core
+  - RxSwiftUtilities (2.0.1):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - Swinject (2.0.0)
+
+DEPENDENCIES:
+  - Moya/RxSwift
+  - Reusable
+  - RxCocoa
+  - RxKingfisher
+  - RxSwift
+  - RxSwiftExt
+  - RxSwiftUtilities (~> 2.0.1)
+  - Swinject (~> 2.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - Moya
+    - Result
+    - Reusable
+    - RxAtomic
+    - RxCocoa
+    - RxKingfisher
+    - RxSwift
+    - RxSwiftExt
+    - RxSwiftUtilities
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  Reusable: 188be1a54ac0691bc66e5bb24ec6eb91971b315b
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxKingfisher: d79612e7a6cab0b67d6e9b63fc1572fccc825afb
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  RxSwiftExt: 01f8ecbeeb355698e9c75365ebe908b00dacf45d
+  RxSwiftUtilities: 0edb01ef16c527c10fb352485b62cbd951e4a04d
+  Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
+
+PODFILE CHECKSUM: bafffa6b311e656863ee19d7d4d8f8d6996949f5
+
+COCOAPODS: 1.5.3

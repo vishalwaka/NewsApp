@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainView" customModule="NewsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="XmI-yI-Xbw" id="Ifk-H7-tBG"/>
+                <outlet property="searchContainer" destination="nbR-Id-YHa" id="nK9-CV-rVX"/>
+                <outlet property="tableView" destination="Qbv-lJ-et2" id="i07-7X-k37"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o1K-nK-Qzg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlr-tE-Mgr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qbv-lJ-et2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmI-yI-Xbw" customClass="HeaderView" customModule="NewsApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" placeholder="YES" id="MMS-BQ-rqz"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbR-Id-YHa">
+                    <rect key="frame" x="0.0" y="160" width="375" height="507"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Qbv-lJ-et2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0vn-o1-1bf"/>
+                <constraint firstItem="nbR-Id-YHa" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="3gj-hb-ifF"/>
+                <constraint firstItem="Qlr-tE-Mgr" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="ASQ-ku-cYD"/>
+                <constraint firstItem="nbR-Id-YHa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="F9o-cq-Hbl"/>
+                <constraint firstItem="XmI-yI-Xbw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Go1-LJ-nMr"/>
+                <constraint firstItem="o1K-nK-Qzg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="H8f-nv-JBG"/>
+                <constraint firstItem="Qlr-tE-Mgr" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JlM-Xq-eSM"/>
+                <constraint firstItem="nbR-Id-YHa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="M43-lf-pfs"/>
+                <constraint firstItem="Qbv-lJ-et2" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Oah-Un-MJo"/>
+                <constraint firstItem="XmI-yI-Xbw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="PNz-pL-XSu"/>
+                <constraint firstItem="Qlr-tE-Mgr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QQw-Zz-kMl"/>
+                <constraint firstItem="Qlr-tE-Mgr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ScQ-52-FVL"/>
+                <constraint firstItem="Qbv-lJ-et2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SrQ-BM-Ndx"/>
+                <constraint firstItem="nbR-Id-YHa" firstAttribute="top" secondItem="XmI-yI-Xbw" secondAttribute="bottom" id="Xme-W4-OeF"/>
+                <constraint firstItem="o1K-nK-Qzg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="cxG-Bs-t1C"/>
+                <constraint firstItem="Qbv-lJ-et2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fWY-yU-192"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="o1K-nK-Qzg" secondAttribute="trailing" id="irN-so-dmW"/>
+                <constraint firstItem="XmI-yI-Xbw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mHW-ae-V1I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="o1K-nK-Qzg" secondAttribute="bottom" id="yAO-3o-0WT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.399999999999999" y="56.221889055472268"/>
+        </view>
+    </objects>
+</document>
